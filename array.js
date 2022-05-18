@@ -7,26 +7,36 @@ const sumNumbersInArray = (numbersArray) => {
 
 // 2
 
-const squereNumbers = (squereArray) =>{
-    return  squereArray.map(squere=>squere*squere) 
+const squereNumbers = (squereArray) => {
+    return squereArray.map(squere => squere * squere)
 }
 
 // 3
-const multiNumbers =(multiArray) =>{
-    return multiArray.reduce((num)=> num*num);
+const multiNumbers = (multiArray) => {
+    return multiArray.reduce((num) => num * num);
 }
 
 // 4
-const biggestNumber = (numArray) =>{
-    numArray.reduce((accumulator,num)=>{
-        if (accumulator<num)
-        return num;
+const biggestNumber = (numArray) => {
+    return numArray.reduce((accumulator, num) => {
+        if (accumulator < num)
+            return num;
         else return accumulator;
-     
-        
-    },0)
+
+
+    }, numArray[0])
 }
-const biggerThen6 = (biggerArray)=>{
-  return biggerArray.filter((a)=>a>6)
+
+// 5
+const biggerThen6 = (biggerArray) => {
+    return biggerArray.filter((a) => a > 6)
 }
-console.log(biggerThen6([6,7,8]))
+
+
+// 6
+const length2Numbers = (arraylen) => {
+    return arraylen.map(itemy => itemy = itemy.length,0)
+    
+}
+
+console.log(length2Numbers(["five","suka blyet"]))
