@@ -39,4 +39,8 @@ const length2Numbers = (arraylen) => {
     
 }
 
-console.log(length2Numbers(["five","suka blyet"]))
+// 7
+const lengthANDnum = (arraylenth) => {
+    return arraylenth.map(itemy => itemy = itemy.length+arraylenth,0)
+    
+}
