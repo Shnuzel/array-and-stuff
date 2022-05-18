@@ -44,3 +44,8 @@ const lengthANDnum = (arraylenth) => {
     return arraylenth.map(itemy => itemy = itemy.length+arraylenth,0)
     
 }
+// 8
+const AllThings = (array)=>{
+    return array.reduce((word1,word2)=>words= word1+word2)
+}
+console.log(AllThings(["Help","Step-bro","ImStuck"]))
